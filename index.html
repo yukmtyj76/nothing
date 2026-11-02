@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nothing — Just a Button</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      color: #eaeaea;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      opacity: 0.85;
+    }
+
+    .btn {
+      padding: 0.9rem 2.6rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(135deg, #6a5af9, #8f6af9);
+      box-shadow: 0 8px 24px rgba(106, 90, 249, 0.45);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 32px rgba(106, 90, 249, 0.6);
+      filter: brightness(1.08);
+    }
+
+    .btn:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 4px 14px rgba(106, 90, 249, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>همین! فقط یه دکمه</h1>
+  <button class="btn">کلیکم نکن 🙂</button>
+</body>
+</html>
